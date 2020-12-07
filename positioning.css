@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    line-height: 1.2;
 }
 /* ------------------------------------------------ */
 
@@ -15,7 +16,7 @@ here we center it and give it a width of only 60% of the body */
 }
 /* ------------------------------------------------ */
 
-/*           We give the divs some colors           */
+/*  -------  We give the divs some colors  -------  */
 
 .light-gray {
     background-color: #eeeeee;
@@ -48,7 +49,7 @@ section {
  outside the page flow */
 .fixed-div {
     position: fixed;
-    width: 150px;
+    width: 20%;
     height: 60px;
 }
 
@@ -56,12 +57,18 @@ section {
 in this example it was not moved from its default position */
 .relative-div {
     position: relative;
-    height: 100px;
+    height: 150px;
 }
 
 /* The absolute div can be moved relative to its parent in this case the relative div */
 .absolute-div {
     position: absolute;
+    height: 60px;
     bottom: 0;
-    right: -50px;
+    right: -25px;
+}
+
+/* Blue border on the left side of the site */
+body {
+    border-left: 2px #358fd6 solid;
 }

@@ -1,0 +1,67 @@
+/* Basic Reset of padding and margins in the document */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+/* ------------------------------------------------ */
+
+/* The container includes both the paragraphs and the divs that are located in the middle, 
+here we center it and give it a width of only 60% of the body */
+
+.container {
+    margin: 0 auto;
+    width: 60%;
+}
+/* ------------------------------------------------ */
+
+/*           We give the divs some colors           */
+
+.light-gray {
+    background-color: #eeeeee;
+}
+
+.dark-gray {
+    background-color: #999;
+}
+/* ------------------------------------------------ */
+
+/* We give the sections that contain the text some margins 
+we do it because there was a reset at the beginning */
+
+section {
+    margin: 20px 0;
+}
+/* ------------------------------------------------ */
+
+/* --------------- divs styling ------------------- */
+
+/* the class block gives divs some padding and centers the text inside the divs */
+
+.block {
+    text-align: center;
+    padding: 20px;
+}
+/* ------------------------------------------------ */
+
+/* The fixed div stays on top of the document and it is also
+ outside the page flow */
+.fixed-div {
+    position: fixed;
+    width: 150px;
+    height: 60px;
+}
+
+/* The relative div can be moved relative to its own position, 
+in this example it was not moved from its default position */
+.relative-div {
+    position: relative;
+    height: 100px;
+}
+
+/* The absolute div can be moved relative to its parent in this case the relative div */
+.absolute-div {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
